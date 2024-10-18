@@ -13,6 +13,7 @@ import { Button } from "./ui/button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { useState } from "react";
 
 import {
   Form,
@@ -25,6 +26,8 @@ import {
 import { Input } from "@/components/ui/input";
 
 const GoLiveSubscription = () => {
+  const [open, setOpen] = useState<boolean>(false);
+
   const formSchema = z.object({
     email: z.string().email().min(2, {
       message: "Username must be at least 2 characters.",
@@ -40,9 +43,11 @@ const GoLiveSubscription = () => {
 
   function onSubmit(email: z.infer<typeof formSchema>) {
     console.log(email);
+    setOpen(false);
   }
+
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button>Get notified when we go live</Button>
       </DialogTrigger>
