@@ -2,35 +2,49 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+To clone this project in your terminal run
+
+```bash
+git clone https://github.com/ChibuzoEkwue/Ink-Pay.git .
+```
+
+To clone a specific branch run
+
+```bash
+
+git clone -b <branchname> https://github.com/ChibuzoEkwue/Ink-Pay.git
+```
+
+Then install all packages
+
+```bash
+npm install
+```
+
+To run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About Ink & Pay
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ink & Pay is a simple invoicing application that allows users to generate invoices and also send to their clients to get paid.
 
-## Learn More
+### Projects minimum viable product (mvp)
 
-To learn more about Next.js, take a look at the following resources:
+Users should be able to generate invoice, clients can pay for those invoices store customers, have accounts generated to show them their balances.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Users who use this platform will be able to see incoices sent to them on their dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+This app is a of a MERN stack with the following packages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Shadui
+- Zod
+- Zustand
+- Framer Motion
